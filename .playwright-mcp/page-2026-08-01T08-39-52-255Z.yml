@@ -1,0 +1,894 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "🧠 SRS" [level=1] [ref=e5]
+    - generic [ref=e6]: đã ôn 55 · 364 thẻ
+    - generic [ref=e7]:
+      - radiogroup "segmented control" [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10] [cursor=pointer]:
+            - radio "Ôn tập"
+            - generic "Ôn tập" [ref=e11]
+          - generic [ref=e12] [cursor=pointer]:
+            - radio "Thống kê"
+            - generic "Thống kê" [ref=e13]
+          - generic [ref=e14] [cursor=pointer]:
+            - radio "Quản lý" [checked] [active]
+            - generic "Quản lý" [ref=e15]
+      - button [ref=e16] [cursor=pointer]:
+        - img "setting" [ref=e18]
+  - generic [ref=e51]:
+    - generic [ref=e53]:
+      - searchbox "Tìm mặt trước / tags…" [ref=e55]
+      - button [ref=e58] [cursor=pointer]:
+        - img "search" [ref=e60]
+    - generic [ref=e65] [cursor=pointer]:
+      - combobox [ref=e67]
+      - generic "Mọi deck" [ref=e68]
+    - generic [ref=e71] [cursor=pointer]:
+      - combobox [ref=e73]
+      - generic "Mọi trạng thái" [ref=e74]
+  - generic [ref=e75]:
+    - generic [ref=e76]: 364 / 364 thẻ
+    - generic [ref=e77]:
+      - button "plus Thẻ" [ref=e79] [cursor=pointer]:
+        - img "plus" [ref=e81]
+        - generic [ref=e85]: Thẻ
+      - button "robot AI tạo thẻ" [ref=e87] [cursor=pointer]:
+        - img "robot" [ref=e89]
+        - generic [ref=e92]: AI tạo thẻ
+      - button "upload Import" [ref=e94] [cursor=pointer]:
+        - img "upload" [ref=e96]
+        - generic [ref=e99]: Import
+      - link "download JSON" [ref=e101] [cursor=pointer]:
+        - /url: /api/export?format=json
+        - img "download" [ref=e103]
+        - generic [ref=e106]: JSON
+      - link "download CSV" [ref=e108] [cursor=pointer]:
+        - /url: /api/export?format=csv
+        - img "download" [ref=e110]
+        - generic [ref=e113]: CSV
+  - generic [ref=e116]:
+    - table [ref=e120]:
+      - rowgroup [ref=e127]:
+        - row [ref=e128]:
+          - columnheader "Select all" [ref=e129]:
+            - checkbox "Select all" [ref=e133] [cursor=pointer]
+          - columnheader "Mặt trước" [ref=e135]
+          - columnheader "Deck" [ref=e136]
+          - columnheader "Ôn" [ref=e137]
+          - columnheader [ref=e138]
+      - rowgroup [ref=e139]:
+        - row "var() dùng cho thứ […]; env_var() dùng cho thứ […]. dbt jinja KB::dbt mới edit delete" [ref=e140]:
+          - cell [ref=e141]:
+            - checkbox [ref=e144] [cursor=pointer]
+          - cell [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e148]:
+                - code [ref=e149]: var()
+                - text: dùng cho thứ […];
+                - code [ref=e150]: env_var()
+                - text: dùng cho thứ […].
+              - text: dbt jinja
+          - cell "KB::dbt" [ref=e151]
+          - cell "mới" [ref=e152]
+          - cell [ref=e154]:
+            - generic [ref=e155]:
+              - button [ref=e157] [cursor=pointer]:
+                - img "edit" [ref=e159]
+              - button [ref=e163] [cursor=pointer]:
+                - img "delete" [ref=e165]
+        - row "run_query() phải bọc trong […] vì dbt parse project […], lượt đầu chưa kết nối warehouse. dbt jinja macro KB::dbt mới edit delete" [ref=e168]:
+          - cell [ref=e169]:
+            - checkbox [ref=e172] [cursor=pointer]
+          - cell [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - code [ref=e177]: run_query()
+                - text: phải bọc trong […] vì dbt parse project […], lượt đầu chưa kết nối warehouse.
+              - text: dbt jinja macro
+          - cell "KB::dbt" [ref=e178]
+          - cell "mới" [ref=e179]
+          - cell [ref=e181]:
+            - generic [ref=e182]:
+              - button [ref=e184] [cursor=pointer]:
+                - img "edit" [ref=e186]
+              - button [ref=e190] [cursor=pointer]:
+                - img "delete" [ref=e192]
+        - 'row "Ba thư mục phải gitignore: […] · […] · […]. dbt project-structure KB::dbt mới edit delete" [ref=e195]':
+          - cell [ref=e196]:
+            - checkbox [ref=e199] [cursor=pointer]
+          - 'cell "Ba thư mục phải gitignore: […] · […] · […]. dbt project-structure" [ref=e201]':
+            - generic [ref=e202]:
+              - generic [ref=e203]: "Ba thư mục phải gitignore: […] · […] · […]."
+              - text: dbt project-structure
+          - cell "KB::dbt" [ref=e204]
+          - cell "mới" [ref=e205]
+          - cell [ref=e207]:
+            - generic [ref=e208]:
+              - button [ref=e210] [cursor=pointer]:
+                - img "edit" [ref=e212]
+              - button [ref=e216] [cursor=pointer]:
+                - img "delete" [ref=e218]
+        - row "Commit […] để cả nhóm cùng version, nhưng gitignore […]. dbt packages KB::dbt mới edit delete" [ref=e221]:
+          - cell [ref=e222]:
+            - checkbox [ref=e225] [cursor=pointer]
+          - cell "Commit […] để cả nhóm cùng version, nhưng gitignore […]. dbt packages" [ref=e227]:
+            - generic [ref=e228]:
+              - generic [ref=e229]: Commit […] để cả nhóm cùng version, nhưng gitignore […].
+              - text: dbt packages
+          - cell "KB::dbt" [ref=e230]
+          - cell "mới" [ref=e231]
+          - cell [ref=e233]:
+            - generic [ref=e234]:
+              - button [ref=e236] [cursor=pointer]:
+                - img "edit" [ref=e238]
+              - button [ref=e242] [cursor=pointer]:
+                - img "delete" [ref=e244]
+        - row "Chi tiết môi trường — tên catalog, host, port, schema, phiên bản — […], chỉ lấy từ […]. verified-at case-study KB::dbt mới edit delete" [ref=e247]:
+          - cell [ref=e248]:
+            - checkbox [ref=e251] [cursor=pointer]
+          - cell "Chi tiết môi trường — tên catalog, host, port, schema, phiên bản — […], chỉ lấy từ […]. verified-at case-study" [ref=e253]:
+            - generic [ref=e254]:
+              - generic [ref=e255]: Chi tiết môi trường — tên catalog, host, port, schema, phiên bản — […], chỉ lấy từ […].
+              - text: verified-at case-study
+          - cell "KB::dbt" [ref=e256]
+          - cell "mới" [ref=e257]
+          - cell [ref=e259]:
+            - generic [ref=e260]:
+              - button [ref=e262] [cursor=pointer]:
+                - img "edit" [ref=e264]
+              - button [ref=e268] [cursor=pointer]:
+                - img "delete" [ref=e270]
+        - row "manifest.json là […] — dbt biết gì về project. catalog.json là […] — warehouse thật sự có gì. dbt lineage KB::dbt mới edit delete" [ref=e273]:
+          - cell [ref=e274]:
+            - checkbox [ref=e277] [cursor=pointer]
+          - cell [ref=e279]:
+            - generic [ref=e280]:
+              - generic [ref=e281]:
+                - code [ref=e282]: manifest.json
+                - text: là […] — dbt biết gì về project.
+                - code [ref=e283]: catalog.json
+                - text: là […] — warehouse thật sự có gì.
+              - text: dbt lineage
+          - cell "KB::dbt" [ref=e284]
+          - cell "mới" [ref=e285]
+          - cell [ref=e287]:
+            - generic [ref=e288]:
+              - button [ref=e290] [cursor=pointer]:
+                - img "edit" [ref=e292]
+              - button [ref=e296] [cursor=pointer]:
+                - img "delete" [ref=e298]
+        - 'row "Ba cách đưa dữ liệu không do dbt tính vào DAG: […] · […] · […]. dbt source seed snapshot KB::dbt mới edit delete" [ref=e301]':
+          - cell [ref=e302]:
+            - checkbox [ref=e305] [cursor=pointer]
+          - 'cell "Ba cách đưa dữ liệu không do dbt tính vào DAG: […] · […] · […]. dbt source seed snapshot" [ref=e307]':
+            - generic [ref=e308]:
+              - generic [ref=e309]: "Ba cách đưa dữ liệu không do dbt tính vào DAG: […] · […] · […]."
+              - text: dbt source seed snapshot
+          - cell "KB::dbt" [ref=e310]
+          - cell "mới" [ref=e311]
+          - cell [ref=e313]:
+            - generic [ref=e314]:
+              - button [ref=e316] [cursor=pointer]:
+                - img "edit" [ref=e318]
+              - button [ref=e322] [cursor=pointer]:
+                - img "delete" [ref=e324]
+        - row "Trong dbt, […] là thứ duy nhất không tái tạo được — chạy sai một lần thì […]. dbt snapshot scd KB::dbt mới edit delete" [ref=e327]:
+          - cell [ref=e328]:
+            - checkbox [ref=e331] [cursor=pointer]
+          - cell "Trong dbt, […] là thứ duy nhất không tái tạo được — chạy sai một lần thì […]. dbt snapshot scd" [ref=e333]:
+            - generic [ref=e334]:
+              - generic [ref=e335]: Trong dbt, […] là thứ duy nhất không tái tạo được — chạy sai một lần thì […].
+              - text: dbt snapshot scd
+          - cell "KB::dbt" [ref=e336]
+          - cell "mới" [ref=e337]
+          - cell [ref=e339]:
+            - generic [ref=e340]:
+              - button [ref=e342] [cursor=pointer]:
+                - img "edit" [ref=e344]
+              - button [ref=e348] [cursor=pointer]:
+                - img "delete" [ref=e350]
+        - 'row "Bốn cột dbt tự thêm vào snapshot: […] · […] · […] · […]. dbt snapshot scd KB::dbt mới edit delete" [ref=e353]':
+          - cell [ref=e354]:
+            - checkbox [ref=e357] [cursor=pointer]
+          - 'cell "Bốn cột dbt tự thêm vào snapshot: […] · […] · […] · […]. dbt snapshot scd" [ref=e359]':
+            - generic [ref=e360]:
+              - generic [ref=e361]: "Bốn cột dbt tự thêm vào snapshot: […] · […] · […] · […]."
+              - text: dbt snapshot scd
+          - cell "KB::dbt" [ref=e362]
+          - cell "mới" [ref=e363]
+          - cell [ref=e365]:
+            - generic [ref=e366]:
+              - button [ref=e368] [cursor=pointer]:
+                - img "edit" [ref=e370]
+              - button [ref=e374] [cursor=pointer]:
+                - img "delete" [ref=e376]
+        - 'row "Ba cú pháp Jinja: […] in ra giá trị · […] là câu lệnh · […] là chú thích. dbt jinja KB::dbt mới edit delete" [ref=e379]':
+          - cell [ref=e380]:
+            - checkbox [ref=e383] [cursor=pointer]
+          - 'cell "Ba cú pháp Jinja: […] in ra giá trị · […] là câu lệnh · […] là chú thích. dbt jinja" [ref=e385]':
+            - generic [ref=e386]:
+              - generic [ref=e387]: "Ba cú pháp Jinja: […] in ra giá trị · […] là câu lệnh · […] là chú thích."
+              - text: dbt jinja
+          - cell "KB::dbt" [ref=e388]
+          - cell "mới" [ref=e389]
+          - cell [ref=e391]:
+            - generic [ref=e392]:
+              - button [ref=e394] [cursor=pointer]:
+                - img "edit" [ref=e396]
+              - button [ref=e400] [cursor=pointer]:
+                - img "delete" [ref=e402]
+        - 'row "Ngưỡng viết macro: khi cùng đoạn SQL lặp ở […] — trước ngưỡng đó thì […]. dbt macro KB::dbt mới edit delete" [ref=e405]':
+          - cell [ref=e406]:
+            - checkbox [ref=e409] [cursor=pointer]
+          - 'cell "Ngưỡng viết macro: khi cùng đoạn SQL lặp ở […] — trước ngưỡng đó thì […]. dbt macro" [ref=e411]':
+            - generic [ref=e412]:
+              - generic [ref=e413]: "Ngưỡng viết macro: khi cùng đoạn SQL lặp ở […] — trước ngưỡng đó thì […]."
+              - text: dbt macro
+          - cell "KB::dbt" [ref=e414]
+          - cell "mới" [ref=e415]
+          - cell [ref=e417]:
+            - generic [ref=e418]:
+              - button [ref=e420] [cursor=pointer]:
+                - img "edit" [ref=e422]
+              - button [ref=e426] [cursor=pointer]:
+                - img "delete" [ref=e428]
+        - row "Trong incremental, có unique_key thì dbt sinh […]; không có thì chỉ […], và dòng cũ bị […]. dbt incremental KB::dbt mới edit delete" [ref=e431]:
+          - cell [ref=e432]:
+            - checkbox [ref=e435] [cursor=pointer]
+          - cell [ref=e437]:
+            - generic [ref=e438]:
+              - generic [ref=e439]:
+                - text: Trong
+                - code [ref=e440]: incremental
+                - text: ", có"
+                - code [ref=e441]: unique_key
+                - text: thì dbt sinh […]; không có thì chỉ […], và dòng cũ bị […].
+              - text: dbt incremental
+          - cell "KB::dbt" [ref=e442]
+          - cell "mới" [ref=e443]
+          - cell [ref=e445]:
+            - generic [ref=e446]:
+              - button [ref=e448] [cursor=pointer]:
+                - img "edit" [ref=e450]
+              - button [ref=e454] [cursor=pointer]:
+                - img "delete" [ref=e456]
+        - 'row "Ba incremental_strategy: […] · […] · […]. dbt incremental KB::dbt mới edit delete" [ref=e459]':
+          - cell [ref=e460]:
+            - checkbox [ref=e463] [cursor=pointer]
+          - cell [ref=e465]:
+            - generic [ref=e466]:
+              - generic [ref=e467]:
+                - text: Ba
+                - code [ref=e468]: incremental_strategy
+                - text: ": […] · […] · […]."
+              - text: dbt incremental
+          - cell "KB::dbt" [ref=e469]
+          - cell "mới" [ref=e470]
+          - cell [ref=e472]:
+            - generic [ref=e473]:
+              - button [ref=e475] [cursor=pointer]:
+                - img "edit" [ref=e477]
+              - button [ref=e481] [cursor=pointer]:
+                - img "delete" [ref=e483]
+        - row "Selector x+ nghĩa là […], dùng khi […]. Selector +x nghĩa là […], dùng khi […]. dbt selector KB::dbt mới edit delete" [ref=e486]:
+          - cell [ref=e487]:
+            - checkbox [ref=e490] [cursor=pointer]
+          - cell [ref=e492]:
+            - generic [ref=e493]:
+              - generic [ref=e494]:
+                - text: Selector
+                - code [ref=e495]: x+
+                - text: nghĩa là […], dùng khi […].Selector
+                - code [ref=e496]: +x
+                - text: nghĩa là […], dùng khi […].
+              - text: dbt selector
+          - cell "KB::dbt" [ref=e497]
+          - cell "mới" [ref=e498]
+          - cell [ref=e500]:
+            - generic [ref=e501]:
+              - button [ref=e503] [cursor=pointer]:
+                - img "edit" [ref=e505]
+              - button [ref=e509] [cursor=pointer]:
+                - img "delete" [ref=e511]
+        - 'row "Ba tầng đặt tên model: […] (một nguồn một model, không join) → […] (trung gian) → […] (mart cho người dùng cuối). dbt model naming KB::dbt mới edit delete" [ref=e514]':
+          - cell [ref=e515]:
+            - checkbox [ref=e518] [cursor=pointer]
+          - 'cell "Ba tầng đặt tên model: […] (một nguồn một model, không join) → […] (trung gian) → […] (mart cho người dùng cuối). dbt model naming" [ref=e520]':
+            - generic [ref=e521]:
+              - generic [ref=e522]: "Ba tầng đặt tên model: […] (một nguồn một model, không join) → […] (trung gian) → […] (mart cho người dùng cuối)."
+              - text: dbt model naming
+          - cell "KB::dbt" [ref=e523]
+          - cell "mới" [ref=e524]
+          - cell [ref=e526]:
+            - generic [ref=e527]:
+              - button [ref=e529] [cursor=pointer]:
+                - img "edit" [ref=e531]
+              - button [ref=e535] [cursor=pointer]:
+                - img "delete" [ref=e537]
+        - 'row "Thứ tự ưu tiên config: […] > […] > […]. dbt config KB::dbt mới edit delete" [ref=e540]':
+          - cell [ref=e541]:
+            - checkbox [ref=e544] [cursor=pointer]
+          - 'cell "Thứ tự ưu tiên config: […] > […] > […]. dbt config" [ref=e546]':
+            - generic [ref=e547]:
+              - generic [ref=e548]: "Thứ tự ưu tiên config: […] > […] > […]."
+              - text: dbt config
+          - cell "KB::dbt" [ref=e549]
+          - cell "mới" [ref=e550]
+          - cell [ref=e552]:
+            - generic [ref=e553]:
+              - button [ref=e555] [cursor=pointer]:
+                - img "edit" [ref=e557]
+              - button [ref=e561] [cursor=pointer]:
+                - img "delete" [ref=e563]
+        - row "target/compiled/ chứa […]; target/run/ chứa […]. dbt debug project-structure KB::dbt mới edit delete" [ref=e566]:
+          - cell [ref=e567]:
+            - checkbox [ref=e570] [cursor=pointer]
+          - cell [ref=e572]:
+            - generic [ref=e573]:
+              - generic [ref=e574]:
+                - code [ref=e575]: target/compiled/
+                - text: chứa […];
+                - code [ref=e576]: target/run/
+                - text: chứa […].
+              - text: dbt debug project-structure
+          - cell "KB::dbt" [ref=e577]
+          - cell "mới" [ref=e578]
+          - cell [ref=e580]:
+            - generic [ref=e581]:
+              - button [ref=e583] [cursor=pointer]:
+                - img "edit" [ref=e585]
+              - button [ref=e589] [cursor=pointer]:
+                - img "delete" [ref=e591]
+        - 'row "Bốn generic test có sẵn: […] · […] · […] · […]. dbt testing KB::dbt mới edit delete" [ref=e594]':
+          - cell [ref=e595]:
+            - checkbox [ref=e598] [cursor=pointer]
+          - 'cell "Bốn generic test có sẵn: […] · […] · […] · […]. dbt testing" [ref=e600]':
+            - generic [ref=e601]:
+              - generic [ref=e602]: "Bốn generic test có sẵn: […] · […] · […] · […]."
+              - text: dbt testing
+          - cell "KB::dbt" [ref=e603]
+          - cell "mới" [ref=e604]
+          - cell [ref=e606]:
+            - generic [ref=e607]:
+              - button [ref=e609] [cursor=pointer]:
+                - img "edit" [ref=e611]
+              - button [ref=e615] [cursor=pointer]:
+                - img "delete" [ref=e617]
+        - 'row "Sáu loại test dbt: generic có sẵn · […] · […] · […] · […] · […]. dbt testing KB::dbt mới edit delete" [ref=e620]':
+          - cell [ref=e621]:
+            - checkbox [ref=e624] [cursor=pointer]
+          - 'cell "Sáu loại test dbt: generic có sẵn · […] · […] · […] · […] · […]. dbt testing" [ref=e626]':
+            - generic [ref=e627]:
+              - generic [ref=e628]: "Sáu loại test dbt: generic có sẵn · […] · […] · […] · […] · […]."
+              - text: dbt testing
+          - cell "KB::dbt" [ref=e629]
+          - cell "mới" [ref=e630]
+          - cell [ref=e632]:
+            - generic [ref=e633]:
+              - button [ref=e635] [cursor=pointer]:
+                - img "edit" [ref=e637]
+              - button [ref=e641] [cursor=pointer]:
+                - img "delete" [ref=e643]
+        - 'row "Ba tầng chất lượng: […] bắt dữ liệu sai sau khi tạo · […] chặn schema sai trước khi tạo · […] bắt SQL sai không cần dữ liệu thật. dbt testing contract KB::dbt mới edit delete" [ref=e646]':
+          - cell [ref=e647]:
+            - checkbox [ref=e650] [cursor=pointer]
+          - 'cell "Ba tầng chất lượng: […] bắt dữ liệu sai sau khi tạo · […] chặn schema sai trước khi tạo · […] bắt SQL sai không cần dữ liệu thật. dbt testing contract" [ref=e652]':
+            - generic [ref=e653]:
+              - generic [ref=e654]: "Ba tầng chất lượng: […] bắt dữ liệu sai sau khi tạo · […] chặn schema sai trước khi tạo · […] bắt SQL sai không cần dữ liệu thật."
+              - text: dbt testing contract
+          - cell "KB::dbt" [ref=e655]
+          - cell "mới" [ref=e656]
+          - cell [ref=e658]:
+            - generic [ref=e659]:
+              - button [ref=e661] [cursor=pointer]:
+                - img "edit" [ref=e663]
+              - button [ref=e667] [cursor=pointer]:
+                - img "delete" [ref=e669]
+        - row "Từ dbt 1.8, khoá đúng trong schema.yml là […]; khoá […] đã deprecated. dbt testing KB::dbt mới edit delete" [ref=e672]:
+          - cell [ref=e673]:
+            - checkbox [ref=e676] [cursor=pointer]
+          - cell [ref=e678]:
+            - generic [ref=e679]:
+              - generic [ref=e680]:
+                - text: Từ dbt 1.8, khoá đúng trong
+                - code [ref=e681]: schema.yml
+                - text: là […]; khoá […] đã deprecated.
+              - text: dbt testing
+          - cell "KB::dbt" [ref=e682]
+          - cell "mới" [ref=e683]
+          - cell [ref=e685]:
+            - generic [ref=e686]:
+              - button [ref=e688] [cursor=pointer]:
+                - img "edit" [ref=e690]
+              - button [ref=e694] [cursor=pointer]:
+                - img "delete" [ref=e696]
+        - 'row "Sáu chiều chất lượng: uniqueness · completeness · validity · integrity · […] (dùng dbt source freshness) · […] (không có test dựng sẵn). dbt testing data-quality KB::dbt mới edit delete" [ref=e699]':
+          - cell [ref=e700]:
+            - checkbox [ref=e703] [cursor=pointer]
+          - cell [ref=e705]:
+            - generic [ref=e706]:
+              - generic [ref=e707]:
+                - text: "Sáu chiều chất lượng: uniqueness · completeness · validity · integrity · […] (dùng"
+                - code [ref=e708]: dbt source freshness
+                - text: ) · […] (không có test dựng sẵn).
+              - text: dbt testing data-quality
+          - cell "KB::dbt" [ref=e709]
+          - cell "mới" [ref=e710]
+          - cell [ref=e712]:
+            - generic [ref=e713]:
+              - button [ref=e715] [cursor=pointer]:
+                - img "edit" [ref=e717]
+              - button [ref=e721] [cursor=pointer]:
+                - img "delete" [ref=e723]
+        - 'row "Bốn materialization: […] · […] · […] · […]. dbt materialization KB::dbt mới edit delete" [ref=e726]':
+          - cell [ref=e727]:
+            - checkbox [ref=e730] [cursor=pointer]
+          - 'cell "Bốn materialization: […] · […] · […] · […]. dbt materialization" [ref=e732]':
+            - generic [ref=e733]:
+              - generic [ref=e734]: "Bốn materialization: […] · […] · […] · […]."
+              - text: dbt materialization
+          - cell "KB::dbt" [ref=e735]
+          - cell "mới" [ref=e736]
+          - cell [ref=e738]:
+            - generic [ref=e739]:
+              - button [ref=e741] [cursor=pointer]:
+                - img "edit" [ref=e743]
+              - button [ref=e747] [cursor=pointer]:
+                - img "delete" [ref=e749]
+        - row "incremental là loại duy nhất đưa […] vào pipeline, nên là loại duy nhất […] được. dbt incremental KB::dbt mới edit delete" [ref=e752]:
+          - cell [ref=e753]:
+            - checkbox [ref=e756] [cursor=pointer]
+          - cell [ref=e758]:
+            - generic [ref=e759]:
+              - generic [ref=e760]:
+                - code [ref=e761]: incremental
+                - text: là loại duy nhất đưa […] vào pipeline, nên là loại duy nhất […] được.
+              - text: dbt incremental
+          - cell "KB::dbt" [ref=e762]
+          - cell "mới" [ref=e763]
+          - cell [ref=e765]:
+            - generic [ref=e766]:
+              - button [ref=e768] [cursor=pointer]:
+                - img "edit" [ref=e770]
+              - button [ref=e774] [cursor=pointer]:
+                - img "delete" [ref=e776]
+        - row "Vì sao sự cố catalog Trino mất tới một buổi mới tìm ra? case-study verified-at KB::dbt mới edit delete" [ref=e779]:
+          - cell [ref=e780]:
+            - checkbox [ref=e783] [cursor=pointer]
+          - cell "Vì sao sự cố catalog Trino mất tới một buổi mới tìm ra? case-study verified-at" [ref=e785]:
+            - generic [ref=e786]:
+              - generic [ref=e787]: Vì sao sự cố catalog Trino mất tới một buổi mới tìm ra?
+              - text: case-study verified-at
+          - cell "KB::dbt" [ref=e788]
+          - cell "mới" [ref=e789]
+          - cell [ref=e791]:
+            - generic [ref=e792]:
+              - button [ref=e794] [cursor=pointer]:
+                - img "edit" [ref=e796]
+              - button [ref=e800] [cursor=pointer]:
+                - img "delete" [ref=e802]
+        - row "Loại lỗi nào của nội dung AI sinh không thể bắt bằng cách đọc? case-study verified-at KB::dbt mới edit delete" [ref=e805]:
+          - cell [ref=e806]:
+            - checkbox [ref=e809] [cursor=pointer]
+          - cell "Loại lỗi nào của nội dung AI sinh không thể bắt bằng cách đọc? case-study verified-at" [ref=e811]:
+            - generic [ref=e812]:
+              - generic [ref=e813]: Loại lỗi nào của nội dung AI sinh không thể bắt bằng cách đọc?
+              - text: case-study verified-at
+          - cell "KB::dbt" [ref=e814]
+          - cell "mới" [ref=e815]
+          - cell [ref=e817]:
+            - generic [ref=e818]:
+              - button [ref=e820] [cursor=pointer]:
+                - img "edit" [ref=e822]
+              - button [ref=e826] [cursor=pointer]:
+                - img "delete" [ref=e828]
+        - row "Chi tiết môi trường phải lấy từ đâu mới được viết vào tài liệu? case-study verified-at KB::dbt mới edit delete" [ref=e831]:
+          - cell [ref=e832]:
+            - checkbox [ref=e835] [cursor=pointer]
+          - cell "Chi tiết môi trường phải lấy từ đâu mới được viết vào tài liệu? case-study verified-at" [ref=e837]:
+            - generic [ref=e838]:
+              - generic [ref=e839]: Chi tiết môi trường phải lấy từ đâu mới được viết vào tài liệu?
+              - text: case-study verified-at
+          - cell "KB::dbt" [ref=e840]
+          - cell "mới" [ref=e841]
+          - cell [ref=e843]:
+            - generic [ref=e844]:
+              - button [ref=e846] [cursor=pointer]:
+                - img "edit" [ref=e848]
+              - button [ref=e852] [cursor=pointer]:
+                - img "delete" [ref=e854]
+        - row "Trường verified_at trống trong kho nghĩa là gì? case-study verified-at KB::dbt mới edit delete" [ref=e857]:
+          - cell [ref=e858]:
+            - checkbox [ref=e861] [cursor=pointer]
+          - cell [ref=e863]:
+            - generic [ref=e864]:
+              - generic [ref=e865]:
+                - text: Trường
+                - code [ref=e866]: verified_at
+                - text: trống trong kho nghĩa là gì?
+              - text: case-study verified-at
+          - cell "KB::dbt" [ref=e867]
+          - cell "mới" [ref=e868]
+          - cell [ref=e870]:
+            - generic [ref=e871]:
+              - button [ref=e873] [cursor=pointer]:
+                - img "edit" [ref=e875]
+              - button [ref=e879] [cursor=pointer]:
+                - img "delete" [ref=e881]
+        - row "dbt […], warehouse […]. dbt KB::dbt mới edit delete" [ref=e884]:
+          - cell [ref=e885]:
+            - checkbox [ref=e888] [cursor=pointer]
+          - cell "dbt […], warehouse […]. dbt" [ref=e890]:
+            - generic [ref=e891]:
+              - generic [ref=e892]: dbt […], warehouse […].
+              - text: dbt
+          - cell "KB::dbt" [ref=e893]
+          - cell "mới" [ref=e894]
+          - cell [ref=e896]:
+            - generic [ref=e897]:
+              - button [ref=e899] [cursor=pointer]:
+                - img "edit" [ref=e901]
+              - button [ref=e905] [cursor=pointer]:
+                - img "delete" [ref=e907]
+        - 'row "Nguyên tắc của mọi test dbt: câu SQL trả về […]; trả […] là pass. dbt testing KB::dbt mới edit delete" [ref=e910]':
+          - cell [ref=e911]:
+            - checkbox [ref=e914] [cursor=pointer]
+          - 'cell "Nguyên tắc của mọi test dbt: câu SQL trả về […]; trả […] là pass. dbt testing" [ref=e916]':
+            - generic [ref=e917]:
+              - generic [ref=e918]: "Nguyên tắc của mọi test dbt: câu SQL trả về […]; trả […] là pass."
+              - text: dbt testing
+          - cell "KB::dbt" [ref=e919]
+          - cell "mới" [ref=e920]
+          - cell [ref=e922]:
+            - generic [ref=e923]:
+              - button [ref=e925] [cursor=pointer]:
+                - img "edit" [ref=e927]
+              - button [ref=e931] [cursor=pointer]:
+                - img "delete" [ref=e933]
+        - row "Lineage graph của dbt chính xác tới mức nào? dbt lineage ref KB::dbt mới edit delete" [ref=e936]:
+          - cell [ref=e937]:
+            - checkbox [ref=e940] [cursor=pointer]
+          - cell "Lineage graph của dbt chính xác tới mức nào? dbt lineage ref" [ref=e942]:
+            - generic [ref=e943]:
+              - generic [ref=e944]: Lineage graph của dbt chính xác tới mức nào?
+              - text: dbt lineage ref
+          - cell "KB::dbt" [ref=e945]
+          - cell "mới" [ref=e946]
+          - cell [ref=e948]:
+            - generic [ref=e949]:
+              - button [ref=e951] [cursor=pointer]:
+                - img "edit" [ref=e953]
+              - button [ref=e957] [cursor=pointer]:
+                - img "delete" [ref=e959]
+        - row "Ba công cụ vận hành trong dbt docs cùng trả lời loại câu hỏi nào? dbt lineage KB::dbt mới edit delete" [ref=e962]:
+          - cell [ref=e963]:
+            - checkbox [ref=e966] [cursor=pointer]
+          - cell "Ba công cụ vận hành trong dbt docs cùng trả lời loại câu hỏi nào? dbt lineage" [ref=e968]:
+            - generic [ref=e969]:
+              - generic [ref=e970]: Ba công cụ vận hành trong dbt docs cùng trả lời loại câu hỏi nào?
+              - text: dbt lineage
+          - cell "KB::dbt" [ref=e971]
+          - cell "mới" [ref=e972]
+          - cell [ref=e974]:
+            - generic [ref=e975]:
+              - button [ref=e977] [cursor=pointer]:
+                - img "edit" [ref=e979]
+              - button [ref=e983] [cursor=pointer]:
+                - img "delete" [ref=e985]
+        - row "Model chạy xong nhưng bảng rỗng — nhìn ở đâu trước? dbt debug KB::dbt mới edit delete" [ref=e988]:
+          - cell [ref=e989]:
+            - checkbox [ref=e992] [cursor=pointer]
+          - cell "Model chạy xong nhưng bảng rỗng — nhìn ở đâu trước? dbt debug" [ref=e994]:
+            - generic [ref=e995]:
+              - generic [ref=e996]: Model chạy xong nhưng bảng rỗng — nhìn ở đâu trước?
+              - text: dbt debug
+          - cell "KB::dbt" [ref=e997]
+          - cell "mới" [ref=e998]
+          - cell [ref=e1000]:
+            - generic [ref=e1001]:
+              - button [ref=e1003] [cursor=pointer]:
+                - img "edit" [ref=e1005]
+              - button [ref=e1009] [cursor=pointer]:
+                - img "delete" [ref=e1011]
+        - row "Sửa model mà bảng trong warehouse không đổi — nguyên nhân thường gặp? dbt debug KB::dbt mới edit delete" [ref=e1014]:
+          - cell [ref=e1015]:
+            - checkbox [ref=e1018] [cursor=pointer]
+          - cell "Sửa model mà bảng trong warehouse không đổi — nguyên nhân thường gặp? dbt debug" [ref=e1020]:
+            - generic [ref=e1021]:
+              - generic [ref=e1022]: Sửa model mà bảng trong warehouse không đổi — nguyên nhân thường gặp?
+              - text: dbt debug
+          - cell "KB::dbt" [ref=e1023]
+          - cell "mới" [ref=e1024]
+          - cell [ref=e1026]:
+            - generic [ref=e1027]:
+              - button [ref=e1029] [cursor=pointer]:
+                - img "edit" [ref=e1031]
+              - button [ref=e1035] [cursor=pointer]:
+                - img "delete" [ref=e1037]
+        - row "Mọi test xanh mà số vẫn sai — thiếu chiều chất lượng nào? dbt testing data-quality KB::dbt mới edit delete" [ref=e1040]:
+          - cell [ref=e1041]:
+            - checkbox [ref=e1044] [cursor=pointer]
+          - cell "Mọi test xanh mà số vẫn sai — thiếu chiều chất lượng nào? dbt testing data-quality" [ref=e1046]:
+            - generic [ref=e1047]:
+              - generic [ref=e1048]: Mọi test xanh mà số vẫn sai — thiếu chiều chất lượng nào?
+              - text: dbt testing data-quality
+          - cell "KB::dbt" [ref=e1049]
+          - cell "mới" [ref=e1050]
+          - cell [ref=e1052]:
+            - generic [ref=e1053]:
+              - button [ref=e1055] [cursor=pointer]:
+                - img "edit" [ref=e1057]
+              - button [ref=e1061] [cursor=pointer]:
+                - img "delete" [ref=e1063]
+        - row "Sơ đồ lineage thiếu một cạnh — nguyên nhân? dbt lineage ref KB::dbt mới edit delete" [ref=e1066]:
+          - cell [ref=e1067]:
+            - checkbox [ref=e1070] [cursor=pointer]
+          - cell "Sơ đồ lineage thiếu một cạnh — nguyên nhân? dbt lineage ref" [ref=e1072]:
+            - generic [ref=e1073]:
+              - generic [ref=e1074]: Sơ đồ lineage thiếu một cạnh — nguyên nhân?
+              - text: dbt lineage ref
+          - cell "KB::dbt" [ref=e1075]
+          - cell "mới" [ref=e1076]
+          - cell [ref=e1078]:
+            - generic [ref=e1079]:
+              - button [ref=e1081] [cursor=pointer]:
+                - img "edit" [ref=e1083]
+              - button [ref=e1087] [cursor=pointer]:
+                - img "delete" [ref=e1089]
+        - 'row "Ngày 30/07/2026, tài liệu do AI sinh ghi catalog: iceberg cho Trino — sai thế nào? case-study verified-at trino KB::dbt mới edit delete" [ref=e1092]':
+          - cell [ref=e1093]:
+            - checkbox [ref=e1096] [cursor=pointer]
+          - cell [ref=e1098]:
+            - generic [ref=e1099]:
+              - generic [ref=e1100]:
+                - text: Ngày 30/07/2026, tài liệu do AI sinh ghi
+                - code [ref=e1101]: "catalog: iceberg"
+                - text: cho Trino — sai thế nào?
+              - text: case-study verified-at trino
+          - cell "KB::dbt" [ref=e1102]
+          - cell "mới" [ref=e1103]
+          - cell [ref=e1105]:
+            - generic [ref=e1106]:
+              - button [ref=e1108] [cursor=pointer]:
+                - img "edit" [ref=e1110]
+              - button [ref=e1114] [cursor=pointer]:
+                - img "delete" [ref=e1116]
+        - row "manifest và catalog lệch nhau nghĩa là gì? dbt lineage KB::dbt mới edit delete" [ref=e1119]:
+          - cell [ref=e1120]:
+            - checkbox [ref=e1123] [cursor=pointer]
+          - cell [ref=e1125]:
+            - generic [ref=e1126]:
+              - generic [ref=e1127]:
+                - code [ref=e1128]: manifest
+                - text: và
+                - code [ref=e1129]: catalog
+                - text: lệch nhau nghĩa là gì?
+              - text: dbt lineage
+          - cell "KB::dbt" [ref=e1130]
+          - cell "mới" [ref=e1131]
+          - cell [ref=e1133]:
+            - generic [ref=e1134]:
+              - button [ref=e1136] [cursor=pointer]:
+                - img "edit" [ref=e1138]
+              - button [ref=e1142] [cursor=pointer]:
+                - img "delete" [ref=e1144]
+        - row "Project chỉ có 4 model mà manifest.json đếm 16 node — vì sao? dbt lineage KB::dbt mới edit delete" [ref=e1147]:
+          - cell [ref=e1148]:
+            - checkbox [ref=e1151] [cursor=pointer]
+          - cell [ref=e1153]:
+            - generic [ref=e1154]:
+              - generic [ref=e1155]:
+                - text: Project chỉ có 4 model mà
+                - code [ref=e1156]: manifest.json
+                - text: đếm 16 node — vì sao?
+              - text: dbt lineage
+          - cell "KB::dbt" [ref=e1157]
+          - cell "mới" [ref=e1158]
+          - cell [ref=e1160]:
+            - generic [ref=e1161]:
+              - button [ref=e1163] [cursor=pointer]:
+                - img "edit" [ref=e1165]
+              - button [ref=e1169] [cursor=pointer]:
+                - img "delete" [ref=e1171]
+        - 'row "{% docs %} trong models/docs/docs.md dùng để làm gì? dbt docs KB::dbt mới edit delete" [ref=e1174]':
+          - cell [ref=e1175]:
+            - checkbox [ref=e1178] [cursor=pointer]
+          - cell [ref=e1180]:
+            - generic [ref=e1181]:
+              - generic [ref=e1182]:
+                - code [ref=e1183]: "{% docs %}"
+                - text: trong
+                - code [ref=e1184]: models/docs/docs.md
+                - text: dùng để làm gì?
+              - text: dbt docs
+          - cell "KB::dbt" [ref=e1185]
+          - cell "mới" [ref=e1186]
+          - cell [ref=e1188]:
+            - generic [ref=e1189]:
+              - button [ref=e1191] [cursor=pointer]:
+                - img "edit" [ref=e1193]
+              - button [ref=e1197] [cursor=pointer]:
+                - img "delete" [ref=e1199]
+        - row "Muốn cả nhóm xem được dbt docs thì làm sao? dbt docs KB::dbt mới edit delete" [ref=e1202]:
+          - cell [ref=e1203]:
+            - checkbox [ref=e1206] [cursor=pointer]
+          - cell "Muốn cả nhóm xem được dbt docs thì làm sao? dbt docs" [ref=e1208]:
+            - generic [ref=e1209]:
+              - generic [ref=e1210]: Muốn cả nhóm xem được dbt docs thì làm sao?
+              - text: dbt docs
+          - cell "KB::dbt" [ref=e1211]
+          - cell "mới" [ref=e1212]
+          - cell [ref=e1214]:
+            - generic [ref=e1215]:
+              - button [ref=e1217] [cursor=pointer]:
+                - img "edit" [ref=e1219]
+              - button [ref=e1223] [cursor=pointer]:
+                - img "delete" [ref=e1225]
+        - row "state:modified+ cần điều kiện gì mới dùng được? dbt ci lineage KB::dbt mới edit delete" [ref=e1228]:
+          - cell [ref=e1229]:
+            - checkbox [ref=e1232] [cursor=pointer]
+          - cell [ref=e1234]:
+            - generic [ref=e1235]:
+              - generic [ref=e1236]:
+                - code [ref=e1237]: state:modified+
+                - text: cần điều kiện gì mới dùng được?
+              - text: dbt ci lineage
+          - cell "KB::dbt" [ref=e1238]
+          - cell "mới" [ref=e1239]
+          - cell [ref=e1241]:
+            - generic [ref=e1242]:
+              - button [ref=e1244] [cursor=pointer]:
+                - img "edit" [ref=e1246]
+              - button [ref=e1250] [cursor=pointer]:
+                - img "delete" [ref=e1252]
+        - row "Trên project 400 model, state:modified+ đổi CI từ bao nhiêu xuống bao nhiêu? dbt ci KB::dbt mới edit delete" [ref=e1255]:
+          - cell [ref=e1256]:
+            - checkbox [ref=e1259] [cursor=pointer]
+          - cell [ref=e1261]:
+            - generic [ref=e1262]:
+              - generic [ref=e1263]:
+                - text: Trên project 400 model,
+                - code [ref=e1264]: state:modified+
+                - text: đổi CI từ bao nhiêu xuống bao nhiêu?
+              - text: dbt ci
+          - cell "KB::dbt" [ref=e1265]
+          - cell "mới" [ref=e1266]
+          - cell [ref=e1268]:
+            - generic [ref=e1269]:
+              - button [ref=e1271] [cursor=pointer]:
+                - img "edit" [ref=e1273]
+              - button [ref=e1277] [cursor=pointer]:
+                - img "delete" [ref=e1279]
+        - row "exposures khai cái gì mà DAG dbt không biết? dbt lineage exposures KB::dbt mới edit delete" [ref=e1282]:
+          - cell [ref=e1283]:
+            - checkbox [ref=e1286] [cursor=pointer]
+          - cell [ref=e1288]:
+            - generic [ref=e1289]:
+              - generic [ref=e1290]:
+                - code [ref=e1291]: exposures
+                - text: khai cái gì mà DAG dbt không biết?
+              - text: dbt lineage exposures
+          - cell "KB::dbt" [ref=e1292]
+          - cell "mới" [ref=e1293]
+          - cell [ref=e1295]:
+            - generic [ref=e1296]:
+              - button [ref=e1298] [cursor=pointer]:
+                - img "edit" [ref=e1300]
+              - button [ref=e1304] [cursor=pointer]:
+                - img "delete" [ref=e1306]
+        - row "Trước khi xoá một cột, exposures giúp trả lời câu hỏi nào? dbt exposures KB::dbt mới edit delete" [ref=e1309]:
+          - cell [ref=e1310]:
+            - checkbox [ref=e1313] [cursor=pointer]
+          - cell [ref=e1315]:
+            - generic [ref=e1316]:
+              - generic [ref=e1317]:
+                - text: Trước khi xoá một cột,
+                - code [ref=e1318]: exposures
+                - text: giúp trả lời câu hỏi nào?
+              - text: dbt exposures
+          - cell "KB::dbt" [ref=e1319]
+          - cell "mới" [ref=e1320]
+          - cell [ref=e1322]:
+            - generic [ref=e1323]:
+              - button [ref=e1325] [cursor=pointer]:
+                - img "edit" [ref=e1327]
+              - button [ref=e1331] [cursor=pointer]:
+                - img "delete" [ref=e1333]
+        - row "Ca dùng phổ biến nhất của post-hook? dbt hook KB::dbt mới edit delete" [ref=e1336]:
+          - cell [ref=e1337]:
+            - checkbox [ref=e1340] [cursor=pointer]
+          - cell [ref=e1342]:
+            - generic [ref=e1343]:
+              - generic [ref=e1344]:
+                - text: Ca dùng phổ biến nhất của
+                - code [ref=e1345]: post-hook
+                - text: "?"
+              - text: dbt hook
+          - cell "KB::dbt" [ref=e1346]
+          - cell "mới" [ref=e1347]
+          - cell [ref=e1349]:
+            - generic [ref=e1350]:
+              - button [ref=e1352] [cursor=pointer]:
+                - img "edit" [ref=e1354]
+              - button [ref=e1358] [cursor=pointer]:
+                - img "delete" [ref=e1360]
+        - row "Ngưỡng nào thì nên viết macro? dbt macro KB::dbt mới edit delete" [ref=e1363]:
+          - cell [ref=e1364]:
+            - checkbox [ref=e1367] [cursor=pointer]
+          - cell "Ngưỡng nào thì nên viết macro? dbt macro" [ref=e1369]:
+            - generic [ref=e1370]:
+              - generic [ref=e1371]: Ngưỡng nào thì nên viết macro?
+              - text: dbt macro
+          - cell "KB::dbt" [ref=e1372]
+          - cell "mới" [ref=e1373]
+          - cell [ref=e1375]:
+            - generic [ref=e1376]:
+              - button [ref=e1378] [cursor=pointer]:
+                - img "edit" [ref=e1380]
+              - button [ref=e1384] [cursor=pointer]:
+                - img "delete" [ref=e1386]
+        - row "Trước khi tự viết macro nên làm gì? dbt macro KB::dbt mới edit delete" [ref=e1389]:
+          - cell [ref=e1390]:
+            - checkbox [ref=e1393] [cursor=pointer]
+          - cell "Trước khi tự viết macro nên làm gì? dbt macro" [ref=e1395]:
+            - generic [ref=e1396]:
+              - generic [ref=e1397]: Trước khi tự viết macro nên làm gì?
+              - text: dbt macro
+          - cell "KB::dbt" [ref=e1398]
+          - cell "mới" [ref=e1399]
+          - cell [ref=e1401]:
+            - generic [ref=e1402]:
+              - button [ref=e1404] [cursor=pointer]:
+                - img "edit" [ref=e1406]
+              - button [ref=e1410] [cursor=pointer]:
+                - img "delete" [ref=e1412]
+        - row "Macro dbt_utils nào cần ngay cho bảng có grain tổ hợp? dbt macro dbt-utils KB::dbt mới edit delete" [ref=e1415]:
+          - cell [ref=e1416]:
+            - checkbox [ref=e1419] [cursor=pointer]
+          - cell [ref=e1421]:
+            - generic [ref=e1422]:
+              - generic [ref=e1423]:
+                - text: Macro
+                - code [ref=e1424]: dbt_utils
+                - text: nào cần ngay cho bảng có grain tổ hợp?
+              - text: dbt macro dbt-utils
+          - cell "KB::dbt" [ref=e1425]
+          - cell "mới" [ref=e1426]
+          - cell [ref=e1428]:
+            - generic [ref=e1429]:
+              - button [ref=e1431] [cursor=pointer]:
+                - img "edit" [ref=e1433]
+              - button [ref=e1437] [cursor=pointer]:
+                - img "delete" [ref=e1439]
+        - row "Khoá version package thế nào cho đúng? dbt packages KB::dbt mới edit delete" [ref=e1442]:
+          - cell [ref=e1443]:
+            - checkbox [ref=e1446] [cursor=pointer]
+          - cell "Khoá version package thế nào cho đúng? dbt packages" [ref=e1448]:
+            - generic [ref=e1449]:
+              - generic [ref=e1450]: Khoá version package thế nào cho đúng?
+              - text: dbt packages
+          - cell "KB::dbt" [ref=e1451]
+          - cell "mới" [ref=e1452]
+          - cell [ref=e1454]:
+            - generic [ref=e1455]:
+              - button [ref=e1457] [cursor=pointer]:
+                - img "edit" [ref=e1459]
+              - button [ref=e1463] [cursor=pointer]:
+                - img "delete" [ref=e1465]
+    - list [ref=e1468]:
+      - listitem [ref=e1469]: 1–50 / 364
+      - listitem "Trang Trước" [ref=e1470]:
+        - button [disabled] [ref=e1471]:
+          - img "left" [ref=e1472]
+      - listitem "1" [ref=e1475] [cursor=pointer]
+      - listitem "2" [ref=e1477] [cursor=pointer]
+      - listitem "3" [ref=e1479] [cursor=pointer]
+      - listitem "Đến 3 Trang Kế" [ref=e1481] [cursor=pointer]:
+        - generic [ref=e1483]:
+          - img "double-right" [ref=e1484]
+          - generic [ref=e1487]: •••
+      - listitem "8" [ref=e1488] [cursor=pointer]
+      - listitem "Trang Kế" [ref=e1490] [cursor=pointer]:
+        - button [ref=e1491]:
+          - img "right" [ref=e1492]

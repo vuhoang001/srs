@@ -1,0 +1,48 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "🧠 SRS" [level=1] [ref=e5]
+    - generic [ref=e6]: đã ôn 0 · 0 thẻ
+    - generic [ref=e7]:
+      - radiogroup "segmented control" [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10] [cursor=pointer]:
+            - radio "Ôn tập" [checked]
+            - generic "Ôn tập" [ref=e11]
+          - generic [ref=e12] [cursor=pointer]:
+            - radio "Thống kê"
+            - generic "Thống kê" [ref=e13]
+          - generic [ref=e14] [cursor=pointer]:
+            - radio "Quản lý"
+            - generic "Quản lý" [ref=e15]
+      - button [ref=e16] [cursor=pointer]:
+        - img "setting" [ref=e18]
+  - generic [ref=e21]:
+    - generic [ref=e24] [cursor=pointer]:
+      - combobox [ref=e26]
+      - generic "Tất cả deck" [ref=e27]
+    - generic [ref=e30] [cursor=pointer]:
+      - combobox [ref=e32]
+      - generic "Mọi tag" [ref=e33]
+    - radiogroup "segmented control" [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36] [cursor=pointer]:
+          - radio "Thẻ" [checked]
+          - generic "Thẻ" [ref=e37]
+        - generic [ref=e38] [cursor=pointer]:
+          - radio "Trắc nghiệm"
+          - generic "Trắc nghiệm" [ref=e39]
+        - generic [ref=e40] [cursor=pointer]:
+          - radio "Gõ"
+          - generic "Gõ" [ref=e41]
+    - radiogroup "segmented control" [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44] [cursor=pointer]:
+          - radio "Xuôi" [checked]
+          - generic "Xuôi" [ref=e45]
+        - generic [ref=e46] [cursor=pointer]:
+          - radio "Ngược"
+          - generic "Ngược" [ref=e47]
+        - generic [ref=e48] [cursor=pointer]:
+          - radio "Cả hai"
+          - generic "Cả hai" [ref=e49]
+  - generic [ref=e50]: …
