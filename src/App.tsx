@@ -16,8 +16,9 @@ export function App() {
   const refresh = useCallback(() => api.stats().then(setStats).catch(() => {}), [])
   useEffect(() => { refresh() }, [refresh, view])
 
+  // Tab doc mot the -> cot hep de de doc. Tab bang/bieu do -> dung het be ngang.
   return (
-    <div className="wrap">
+    <div className={view === 'review' ? 'wrap' : 'wrap wide'}>
       <header>
         <h1>🧠 SRS</h1>
         <Typography.Text type="secondary" className="pill">đã ôn <b>{stats.daOnHomNay}</b> · <b>{stats.total}</b> thẻ</Typography.Text>

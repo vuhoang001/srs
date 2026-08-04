@@ -45,6 +45,8 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: #333b4a; background-clip: content-box; }
 
 .wrap { max-width: 800px; margin: 0 auto; padding: 24px 18px 96px; }
+/* Tab Quan ly / Thong ke: dung het be ngang man hinh, van chua le hai ben */
+.wrap.wide { max-width: min(1760px, calc(100vw - 48px)); padding-bottom: 32px; }
 
 header {
   display: flex; align-items: center; gap: 16px; margin-bottom: 22px;

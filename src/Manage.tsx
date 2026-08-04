@@ -75,9 +75,32 @@ export function Manage({ onChange }: { onChange: () => void }) {
     })
   }
 
-  // Danh sach chi hien tieu de mat truoc (mot dong, gon) + nut sua/xoa nho
+  // Mau theo do kho — de luot mat thay ngay the nao nang
+  const MAU_TAG: Record<string, string> = { easy: 'green', medium: 'gold', hard: 'red' }
+
   const columns: ColumnsType<Card> = [
     { title: 'Mặt trước', dataIndex: 'front', ellipsis: true, render: (_, c) => plain(c.front) },
+    { title: 'Deck', dataIndex: 'deck', width: 180, ellipsis: true,
+      render: (d: string) => <Typography.Text type="secondary">{d}</Typography.Text> },
+    {
+      title: 'Tags', dataIndex: 'tags', width: 260, ellipsis: true,
+      render: (t: string) => (
+        <Space size={4} wrap>
+          {(t || '').split(/\s+/).filter(Boolean).map((x) => (
+            <Tag key={x} color={MAU_TAG[x]} style={{ marginInlineEnd: 0 }}>{x}</Tag>
+          ))}
+        </Space>
+      ),
+    },
+    {
+      title: 'Tiến trình', key: 'tt', width: 150,
+      render: (_, c) =>
+        !c.reps
+          ? <Typography.Text type="secondary">Chưa học</Typography.Text>
+          : <Typography.Text type="secondary">
+              {c.reps} lượt{c.due ? ` · ${new Date(c.due).toLocaleDateString('vi')}` : ''}
+            </Typography.Text>,
+    },
     {
       title: '', key: 'act', width: 78,
       render: (_, c) => (
@@ -104,7 +127,7 @@ export function Manage({ onChange }: { onChange: () => void }) {
     <>
       <Flex gap={12} align="stretch" style={{ marginTop: 10, height: 'calc(100vh - 140px)' }}>
         {/* Sidebar: cay deck — bam vao -> hien the ben trong */}
-        <div style={{ width: 230, flexShrink: 0, overflow: 'auto', paddingRight: 6, borderRight: '1px solid var(--line)' }}>
+        <div style={{ width: 268, flexShrink: 0, overflow: 'auto', paddingRight: 6, borderRight: '1px solid var(--line)' }}>
           <Tree
             treeData={treeData as any}
             selectedKeys={[deck]}
