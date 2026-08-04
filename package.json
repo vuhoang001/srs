@@ -10,6 +10,8 @@
     "dev:web": "vite",
     "import": "tsx server/import.ts",
     "gen": "node scripts/gen.mjs",
+    "pull": "node scripts/sync.mjs pull",
+    "push": "node scripts/sync.mjs push",
     "build": "vite build",
     "start": "cross-env NODE_ENV=production tsx server/index.ts"
   },
