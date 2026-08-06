@@ -9,6 +9,7 @@
     "dev:api": "tsx watch server/index.ts",
     "dev:web": "vite",
     "import": "tsx server/import.ts",
+    "import:quiz": "tsx server/import-quiz.ts",
     "gen": "node scripts/gen.mjs",
     "pull": "node scripts/sync.mjs pull",
     "push": "node scripts/sync.mjs push",
